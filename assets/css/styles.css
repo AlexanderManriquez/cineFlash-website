@@ -26,6 +26,20 @@ body {
     height: 300px;
 }
 
+.accordion-button:hover {
+    background-color: #c7ccd0;
+    color: #000;
+}
+
+.fa-brands {
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+.fa-brands:hover {
+    color: #777;
+}
+
 @media (max-width: 768px) {
     .hero-section {
         display: none;

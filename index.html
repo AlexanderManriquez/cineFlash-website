@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./assets/img/favicon-32x32.png" type="image/x-icon">
     <title>CineFlash</title>
+    <script src="https://kit.fontawesome.com/6262dc69d7.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/css/styles.css">
 </head>
@@ -37,22 +38,22 @@
                 <div class="carousel-item active">
                 <img src="./assets/img/elio-banner.png" class="d-block w-100 adjust-height" alt="Banner de la Película Elio">
                 <div class="carousel-caption d-none d-md-block">
-                    <h5>Películas destacadas</h5>
+                    <h5">Películas destacadas</h5>
                     <p>Elio</p>
                 </div>
                 </div>
                 <div class="carousel-item">
                 <img src="./assets/img/f1-banner.png" class="d-block w-100 adjust-height" alt="Banner de la Película F1">
                 <div class="carousel-caption d-none d-md-block">
-                    <h5>Películas destacadas</h5>
-                    <p>F1 La película</p>
+                    <h5 class="text-black">Películas destacadas</h5>
+                    <p >F1 La película</p>
                 </div>
                 </div>
                 <div class="carousel-item">
                 <img src="./assets/img/exterminio-banner.png" class="d-block w-100 adjust-height" alt="Banner de la Película Exterminio">
                 <div class="carousel-caption d-none d-md-block">
-                    <h5>Películas destacadas</h5>
-                    <p>Exterminio: La evolución</p>
+                    <h5 class="text-black">Películas destacadas</h5>
+                    <p class="text-black">Exterminio: La evolución</p>
                 </div>
                 </div>
             </div>
@@ -78,7 +79,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Como entrenar a tu dragón</h5>
                             <p class="card-text">Un joven vikingo desafía a su pueblo al entablar amistad con un temido dragón, cambiando para siempre su mundo.</p>
-                            <a href="#" class="btn btn-danger">Reserva tu entrada</a>
+                            <a href="#" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#payForm">Reserva tu entrada</a>
                         </div>
                     </div>
                 </div>
@@ -88,7 +89,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Elio</h5>
                             <p class="card-text">Un niño es abducido y confundido con el embajador de la Tierra ante una comunidad alienígena intergaláctica.</p>
-                            <a href="#" class="btn btn-danger">Reserva tu entrada</a>
+                            <a href="#" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#payForm">Reserva tu entrada</a>
                         </div>
                     </div>
                 </div> 
@@ -98,7 +99,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Exterminio: La Evolución</h5>
                             <p class="card-text">La humanidad enfrenta una nueva mutación del virus que convierte a las personas en seres violentos y más inteligentes.</p>
-                            <a href="#" class="btn btn-danger">Reserva tu entrada</a>
+                            <a href="#" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#payForm">Reserva tu entrada</a>
                         </div>
                     </div>
                 </div> 
@@ -108,7 +109,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Destino final: Lazos de Sangre</h5>
                             <p class="card-text">Un grupo evita una tragedia mortal, pero la muerte regresa para ajustar el destino con un nuevo enfoque familiar.</p>
-                            <a href="#" class="btn btn-danger">Reserva tu entrada</a>
+                            <a href="#" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#payForm">Reserva tu entrada</a>
                         </div>
                     </div>
                 </div> 
@@ -118,7 +119,7 @@
                         <div class="card-body">
                             <h5 class="card-title">F1: La Película</h5>
                             <p class="card-text">Un expiloto regresa a la Fórmula 1, enfrentando desafíos en la pista y una intensa rivalidad dentro del equipo.</p>
-                            <a href="#" class="btn btn-danger">Reserva tu entrada</a>
+                            <a href="#" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#payForm">Reserva tu entrada</a>
                         </div>
                     </div>
                 </div> 
@@ -128,7 +129,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Lilo y Stitch</h5>
                             <p class="card-text">Una niña hawaiana adopta a un alienígena fugitivo, y juntos descubren el valor de la familia y la amistad.</p>
-                            <a href="#" class="btn btn-danger">Reserva tu entrada</a>
+                            <a href="#" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#payForm">Reserva tu entrada</a>
                         </div>
                     </div>
                 </div>  
@@ -139,9 +140,8 @@
             <div class="row d-flex justify-content-evenly">
                 <div class="seleccion py-5 col-12 col-md-4">
                     <h2 class="fs-1 font-monospace fw-bold text-center py-5">Nuestras Sucursales</h2> 
-                    <select class="form-select" aria-label="Default select example">
-                        <option selected>Selecciona tu sucursal</option>
-                        <option value="Parral">Parral</option>
+                    <select id="sucursal-select" class="form-select" aria-label="Selecciona tu sucursal">
+                        <option value="Parral" selected>Parral</option>
                         <option value="Retiro">Retiro</option>
                         <option value="Linares">Linares</option>
                     </select>
@@ -149,11 +149,11 @@
 
                 <div class="card col-12 col-md-4">
                     <div class="card-body">
-                        <h5 class="card-title fs-2">Sucursal Parral</h5>
-                        <img src="./assets/img/fachada-cine.jpg" class="card-img-top w-75" alt="Sucursal Parral">
-                        <p class="card-text">Dirección: Av. Libertad 1234, Parral</p>
-                        <p class="card-text">Teléfono: +56 9 1234 5678</p>
-                        <p class="card-text">Horario: Lunes a Domingo, 10:00 - 22:00</p>                
+                        <h5 id="sucursal-nombre" class="card-title fs-2">Sucursal Parral</h5>
+                        <img id="sucursal-img" src="./assets/img/fachada-cine.jpg" class="card-img-top w-75" alt="Sucursal Parral">
+                        <p id="sucursal-direccion" class="card-text">Dirección: Av. Libertad 1234, Parral</p>
+                        <p id="sucursal-fono" class="card-text">Teléfono: +56 9 1234 5678</p>
+                        <p id="sucursal-horario" class="card-text">Horario: Lunes a Domingo, 10:00 - 22:00</p>                
                     </div>
                 </div> 
             </div>
@@ -163,7 +163,7 @@
             <h2 class="fs-1 font-monospace fw-bold text-center py-5">Combos Comida</h2>
             <p class="text-center">¡Disfruta las mejores películas con las mas increibles promociones!</p>
            <div class="accordion w-50 m-auto" id="accordionPanelsStayOpenExample">
-                <div class="accordion-item">
+                <div class="accordion-item active">
                     <h2 class="accordion-header">
                         <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
                             Combo Individual
@@ -174,7 +174,7 @@
                             <img src="./assets/img/combo-1.jpg" class="img-fluid img-promo" alt="Combo Individual"/>
                             <h3>$5.500</h3>
                             <p>Incluye 1 bebida de 591 mL, 1 cabrita mediana y 1 M&M 55g</p>
-                            <a href="#" class="btn btn-success">Asegura tu comida</a>                       
+                            <a href="#" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#foodPayForm">Asegura tu comida</a>                       
                         </div>
                     </div>
                 </div>
@@ -186,10 +186,10 @@
                     </h2>
                     <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
                         <div class="accordion-body">
-                            <img src="./assets/img/combo-2.jpg" class="img-fluid img-promo" alt="Combo Individual"/>
+                            <img src="./assets/img/combo-2.jpg" class="img-fluid img-promo" alt="Combo Pareja"/>
                             <h3>$10.500</h3>
                             <p>Incluye 2 bebidas de 500mL, 1 cabrita grande, 1M&M 55g y 1 Kit-Kat 47g.</p>
-                            <a href="#" class="btn btn-success">Asegura tu comida</a>     
+                            <a href="#" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#foodPayForm">Asegura tu comida</a>     
                         </div>
                     </div>
                 </div>
@@ -201,10 +201,10 @@
                     </h2>
                     <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
                         <div class="accordion-body">
-                            <img src="./assets/img/combo-3.jpg" class="img-promo" alt="Combo Individual"/>
+                            <img src="./assets/img/combo-3.jpg" class="img-promo" alt="Combo Familia"/>
                             <h3>$20.000</h3>
                             <p>Incluye 4 bebidas de 650mL, 1 cabrita familiar, 2 M&M 55g, 2 Kit-kat 47g y Nachos con queso medianos.</p>
-                            <a href="#" class="btn btn-success">Asegura tu comida</a>     
+                            <a href="#" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#foodPayForm">Asegura tu comida</a>     
                         </div>
                     </div>
                 </div>
@@ -212,9 +212,99 @@
         </section>
     </main>
 
-    <footer class="bg-dark text-white text-center py-3">
-        <div class="social-links">
-            <!-- iconos de redes sociales -->
+    <div class="modal fade" id="payForm" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Formulario de Reserva</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="reservationForm">
+                        <div class="mb-3">
+                            <label for="nombre" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="nombre" placeholder="Ingresa tu nombre">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Ingresa tu email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="cantidad" class="form-label">Cantidad de entradas</label>
+                            <input type="number" class="form-control" id="cantidad" placeholder="Cantidad de entradas">
+                        </div>
+                        <div class="mb-3">
+                            <label for="movie" class="form-label">Pelicula</label>
+                            <input type="text" class="form-control" id="movie" placeholder="Nombre de la película">
+                        </div>
+                        <legend class="form-label">Datos de Pago</legend>
+                        <div class="mb-3">
+                            <label for="card-number" class="form-label">Numero de tarjeta</label>
+                            <input type="number" class="form-control" id="card-number" placeholder="1234 5678 9012 3456" minlength="16" maxlength="16">
+                        </div>
+                        <div class="mb-3">
+                            <label for="card-name" class="form-label">Nombre Titular</label>
+                            <input type="text" class="form-control" id="card-name" placeholder="Nombre del titular de la tarjeta">
+                        </div>
+                        <div class="mb-3">
+                            <label for="secret-number" class="form-label">CVV</label>
+                            <input type="password" class="form-control" id="secret-number" placeholder="***" minlength="3" maxlength="3">
+                        </div>                        
+                        <button type="submit" class="btn btn-success" >Confirmar Reserva</button>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" aria-label="Close">Cancelar</button>
+                     
+                    </form>  
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="foodPayForm" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Formulario de Reserva</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body ">
+                    <form id="foodReservationForm">
+                        <div class="mb-3">
+                            <label for="food-name" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="food-name" placeholder="Ingresa tu nombre">
+                        </div>
+                        <div class="mb-3">
+                            <label for="food-email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="food-email" placeholder="Ingresa tu email">
+                        </div>
+                        <legend class="form-label">Datos de Pago</legend>
+                        <div class="mb-3">
+                            <label for="food-card-number" class="form-label">Numero de tarjeta</label>
+                            <input type="text" class="form-control" id="food-card-number" placeholder="1234 5678 9012 3456" minlength="16" maxlength="16">
+                        </div>
+                        <div class="mb-3">
+                            <label for="food-card-name" class="form-label">Nombre Titular</label>
+                            <input type="text" class="form-control" id="food-card-name" placeholder="Nombre del titular de la tarjeta">
+                        </div>
+                        <div class="mb-3">
+                            <label for="cvv" class="form-label">CVV</label>
+                            <input type="password" class="form-control" id="cvv" placeholder="***" minlength="3" maxlength="3">
+                        </div>
+                        <button type="submit" class="btn btn-success">Confirmar Reserva</button>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" aria-label="Close">Cancelar</button>
+                    </form>
+                </div>
+            </div>
+        </div>        
+    </div>
+
+    <footer class="bg-dark text-white text-center py-3 d-flex flex-column align-items-center">
+        <div class="social-links d-flex gap-3">
+            <h5 class="text-white ">Síguenos:</h5>
+            <a href="www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="www.youtube.com" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+            <a href="www.x.com" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="www.tiktok.com" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
         </div>
         <p>&copy; 2023 CineFlash. Todos los derechos reservados.</p>
     </footer>
@@ -223,5 +313,6 @@
     <script src="https://code.jquery.com/jquery-3.7.1.slim.js" integrity="sha256-UgvvN8vBkgO0luPSUl2s8TIlOSYRoGFAX4jlCIm9Adc=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js" integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK" crossorigin="anonymous"></script>
+    <script src="./assets/js/script.js"></script>
 </body>
 </html>
