@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/img/favicon-32x32.png" type="image/x-icon">
+    <title>CineFlash</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid ">
+            <img src="./assets/img/logo-flash.png" alt="CineFlash Logo" class="navbar-brand-logo">
+            <a class="navbar-brand" href="#">CineFlash</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ms-auto">
+                <a class="nav-link" aria-current="page" href="#cartelera">Cartelera</a>
+                <a class="nav-link" href="#cines">Cines</a>
+                <a class="nav-link" href="#promos">Promociones</a>
+            </div>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-section">
+        <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                <img src="./assets/img/elio-banner.png" class="d-block w-100 adjust-height" alt="Banner de la Película Elio">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Películas destacadas</h5>
+                    <p>Elio</p>
+                </div>
+                </div>
+                <div class="carousel-item">
+                <img src="./assets/img/f1-banner.png" class="d-block w-100 adjust-height" alt="Banner de la Película F1">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Películas destacadas</h5>
+                    <p>F1 La película</p>
+                </div>
+                </div>
+                <div class="carousel-item">
+                <img src="./assets/img/exterminio-banner.png" class="d-block w-100 adjust-height" alt="Banner de la Película Exterminio">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Películas destacadas</h5>
+                    <p>Exterminio: La evolución</p>
+                </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="cartelera container"  id="cartelera">
+            <h1 class="fs-1 font-monospace fw-bold text-center py-3">Cartelera</h1>
+  
+            <div class="row d-flex justify-content-evenly gap-2">
+                <div class="col-12 col-sm-5 col-lg-3 mt-3">
+                    <div class="card">
+                        <img src="./assets/img/entrenar-dragon.png" class="card-img-top" alt="Como entrenar a tu dragón">
+                        <div class="card-body">
+                            <h5 class="card-title">Como entrenar a tu dragón</h5>
+                            <p class="card-text">Un joven vikingo desafía a su pueblo al entablar amistad con un temido dragón, cambiando para siempre su mundo.</p>
+                            <a href="#" class="btn btn-danger">Reserva tu entrada</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-5 col-lg-3 mt-3">
+                    <div class="card">
+                        <img src="./assets/img/elio.png" class="card-img-top" alt="Elio">
+                        <div class="card-body">
+                            <h5 class="card-title">Elio</h5>
+                            <p class="card-text">Un niño es abducido y confundido con el embajador de la Tierra ante una comunidad alienígena intergaláctica.</p>
+                            <a href="#" class="btn btn-danger">Reserva tu entrada</a>
+                        </div>
+                    </div>
+                </div> 
+                <div class="col-12 col-sm-5 col-lg-3 mt-3">
+                    <div class="card">
+                        <img src="./assets/img/exterminio.png" class="card-img-top" alt="Exterminio: La Evolución">
+                        <div class="card-body">
+                            <h5 class="card-title">Exterminio: La Evolución</h5>
+                            <p class="card-text">La humanidad enfrenta una nueva mutación del virus que convierte a las personas en seres violentos y más inteligentes.</p>
+                            <a href="#" class="btn btn-danger">Reserva tu entrada</a>
+                        </div>
+                    </div>
+                </div> 
+                <div class="col-12 col-sm-5 col-lg-3 mt-3">
+                    <div class="card">
+                        <img src="./assets/img/destino-final.png" class="card-img-top" alt="Destino final: Lazos de Sangre">
+                        <div class="card-body">
+                            <h5 class="card-title">Destino final: Lazos de Sangre</h5>
+                            <p class="card-text">Un grupo evita una tragedia mortal, pero la muerte regresa para ajustar el destino con un nuevo enfoque familiar.</p>
+                            <a href="#" class="btn btn-danger">Reserva tu entrada</a>
+                        </div>
+                    </div>
+                </div> 
+                <div class="col-12 col-sm-5 col-lg-3 mt-3">
+                    <div class="card">
+                        <img src="./assets/img/f1-peli.png" class="card-img-top" alt="F1: La Película">
+                        <div class="card-body">
+                            <h5 class="card-title">F1: La Película</h5>
+                            <p class="card-text">Un expiloto regresa a la Fórmula 1, enfrentando desafíos en la pista y una intensa rivalidad dentro del equipo.</p>
+                            <a href="#" class="btn btn-danger">Reserva tu entrada</a>
+                        </div>
+                    </div>
+                </div> 
+                <div class="col-12 col-sm-5 col-lg-3 mt-3">
+                    <div class="card">
+                        <img src="./assets/img/lilo-stitch.png" class="card-img-top" alt="Lilo y Stitch">
+                        <div class="card-body">
+                            <h5 class="card-title">Lilo y Stitch</h5>
+                            <p class="card-text">Una niña hawaiana adopta a un alienígena fugitivo, y juntos descubren el valor de la familia y la amistad.</p>
+                            <a href="#" class="btn btn-danger">Reserva tu entrada</a>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+        </section>
+
+        <section class="cines container  my-5" id="cines">
+            <div class="row d-flex justify-content-evenly">
+                <div class="seleccion py-5 col-12 col-md-4">
+                    <h2 class="fs-1 font-monospace fw-bold text-center py-5">Nuestras Sucursales</h2> 
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>Selecciona tu sucursal</option>
+                        <option value="Parral">Parral</option>
+                        <option value="Retiro">Retiro</option>
+                        <option value="Linares">Linares</option>
+                    </select>
+                </div>
+
+                <div class="card col-12 col-md-4">
+                    <div class="card-body">
+                        <h5 class="card-title fs-2">Sucursal Parral</h5>
+                        <img src="./assets/img/fachada-cine.jpg" class="card-img-top w-75" alt="Sucursal Parral">
+                        <p class="card-text">Dirección: Av. Libertad 1234, Parral</p>
+                        <p class="card-text">Teléfono: +56 9 1234 5678</p>
+                        <p class="card-text">Horario: Lunes a Domingo, 10:00 - 22:00</p>                
+                    </div>
+                </div> 
+            </div>
+        </section>   
+        
+        <section class="container promos p-5">
+            <h2 class="fs-1 font-monospace fw-bold text-center py-5">Combos Comida</h2>
+            <p class="text-center">¡Disfruta las mejores películas con las mas increibles promociones!</p>
+           <div class="accordion w-50 m-auto" id="accordionPanelsStayOpenExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                            Combo Individual
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                        <div class="accordion-body">
+                            <img src="./assets/img/combo-1.jpg" class="img-fluid img-promo" alt="Combo Individual"/>
+                            <h3>$5.500</h3>
+                            <p>Incluye 1 bebida de 591 mL, 1 cabrita mediana y 1 M&M 55g</p>
+                            <a href="#" class="btn btn-success">Asegura tu comida</a>                       
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                            Combo Pareja
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            <img src="./assets/img/combo-2.jpg" class="img-fluid img-promo" alt="Combo Individual"/>
+                            <h3>$10.500</h3>
+                            <p>Incluye 2 bebidas de 500mL, 1 cabrita grande, 1M&M 55g y 1 Kit-Kat 47g.</p>
+                            <a href="#" class="btn btn-success">Asegura tu comida</a>     
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                            Combo Familia
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            <img src="./assets/img/combo-3.jpg" class="img-promo" alt="Combo Individual"/>
+                            <h3>$20.000</h3>
+                            <p>Incluye 4 bebidas de 650mL, 1 cabrita familiar, 2 M&M 55g, 2 Kit-kat 47g y Nachos con queso medianos.</p>
+                            <a href="#" class="btn btn-success">Asegura tu comida</a>     
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <div class="social-links">
+            <!-- iconos de redes sociales -->
+        </div>
+        <p>&copy; 2023 CineFlash. Todos los derechos reservados.</p>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.7.1.slim.js" integrity="sha256-UgvvN8vBkgO0luPSUl2s8TIlOSYRoGFAX4jlCIm9Adc=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js" integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK" crossorigin="anonymous"></script>
+</body>
+</html>

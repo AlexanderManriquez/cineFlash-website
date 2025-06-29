@@ -1,0 +1,44 @@
+body {
+    background-color: azure;
+}
+
+.navbar-brand-logo {
+    width: 40px;
+    height: 40px;
+}
+
+.adjust-height {
+    height: 60vh; 
+    object-fit: cover;
+}
+
+.fs-1, .fs-2 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.card:hover {
+    transform: scale(1.05);
+    transition: transform 0.5s ease;
+}
+
+.img-promo {
+    width: 50%;
+    height: 300px;
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        display: none;
+    }
+}
+
+@media (max-width: 990px) {
+    .w-50 {
+        width: 100% !important;
+    }
+
+    .img-promo {
+        width: 100%;
+        height: auto;
+    }
+}
