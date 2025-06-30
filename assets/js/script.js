@@ -44,6 +44,8 @@ $(document).ready(function () {
     let email = $("#email").val().trim();
     let cantidad = parseInt($("#cantidad").val());
     let pelicula = $("#movie").val().trim();
+    let fecha = $("#date").val();
+    let hora = $("#time").val();
     let tarjeta = $("#card-number").val().trim();
     let titular = $("#card-name").val().trim();
     let cvv = parseInt($("#secret-number").val());
@@ -73,6 +75,15 @@ $(document).ready(function () {
 
     if (pelicula === "") {
       alert("Por favor ingresa el nombre de la película.");
+      return;
+    }
+
+    if (fecha === "") {
+      alert("Por favor ingresa la fecha en que deseas ver la película.");
+      return;
+    }
+    if (hora === "") {
+      alert("Por favor ingresa la hora de la función.");
       return;
     }
 
